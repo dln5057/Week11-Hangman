@@ -1,7 +1,7 @@
 // require prompt to use to make the game 
-
+var word = require('./word.js');
 //require the objects/exports you will use
-var inquirer = require('inquirer');
+ var prompt = require('prompt');
 prompt.start();
 
 game = {
@@ -12,8 +12,9 @@ game = {
 	startGame : function (wrd){
 		//make sure the user has 10 guesses
 		if(guessesRemaining > 0){
-			var randWord = this.wordsToPick;
-			this.currentWrd = randWord[Math.floor(Math.random() * randWord.length)];
+			var randWord = this.wordBank;
+			var wordpicked = randWord[Math.floor(Math.random() * randWord.length)];
+			this.currentWrd = Word;
 		}
 		console.log(game.currentWrd)
 		//get a random word from the array
@@ -33,11 +34,11 @@ game = {
 		prompt.get(['guessLetter'], function(err, result) {
 		    // result is an object like this: { guessLetter: 'f' }
 		    console.log(result);
-		    
+		    console.log(result.guessLetter)
 			  // console log the letter you chose
-
+			  var letterGuess = result.guessLetter;
 		    //this checks if the letter was found and if it is then it sets that specific letter in the word to be found
-		    
+
 		    //if the user guessed incorrectly minus the number of guesses they have left
 				// and console.log if they were incorrect or correct
 		    	
