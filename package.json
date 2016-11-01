@@ -1,0 +1,24 @@
+{
+  "name": "Week11-Hangman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dln5057/Week11-Hangman.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dln5057/Week11-Hangman/issues"
+  },
+  "homepage": "https://github.com/dln5057/Week11-Hangman#readme"
+}
